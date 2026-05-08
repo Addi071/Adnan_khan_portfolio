@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'addy';
+    src: url('./assets/RobotoSlab-VariableFont_wght.ttf')
+}
+
+@font-face {
+    font-family: 'addy2';
+    src: url('./assets/Oswald-VariableFont_wght.ttf')
+}
+
+@font-face{
+    font-family: 'addy3';
+    src: url('./assets/CossetteTexte-Regular.ttf')
+}
+@font-face{
+    font-family: 'addy4';
+    src: url('./assets/CossetteTexte-Bold.ttf')
+}
+
+#first{
+    perspective: 1000px;
+    background-image: url('./assets/mainimg.png')
+}
+#second{
+    perspective: 300px;
+}
+
+#projects{
+  position : relative;
+  perspective: 1000px;
+}
+
+#projectimg{
+  /* -webkit-mask-image: linear-gradient(to right, black 40%, transparent 100%); */
+  mask-image: linear-gradient(to right , black 20%, transparent 70%);
+ 
+  transform: rotateY(30deg)  rotateZ(-15deg);
+  border: 2px solid gray;
+}
+
+.rotateText{
+    
+    transform-origin: 100% 70%;
+}
+
+@media (max-width: 1024px) {
+    #first{
+        background-image: url('./assets/image3.png')
+    }
+}
+
+@media (max-width: 767px) {
+    #first{
+        background-image: url('./assets/imag2.png')
+    }
+}
